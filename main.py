@@ -52,10 +52,10 @@ if __name__ == '__main__':
                 print(f"Товара нет в {object_from}")
             print_state(my_store, my_shop)
             continue
-
         print(f"Нужное количество есть в {object_from}")
         print(f"Курьер забрал {quantity} {title} из {object_from}")
         print(f"Курьер везет {quantity} {title} из {object_from} в {object_to}")
+
         # Пробуем добавить товар куда доставили
         result_add, _ = object_to.add(title=my_request.product, quantity=my_request.amount)
         if not result_add:
